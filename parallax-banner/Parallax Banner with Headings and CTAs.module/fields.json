@@ -1,0 +1,214 @@
+[ {
+  "id" : "background_image",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8419600/placeholder/circuit-bg.jpeg",
+    "alt" : "Circuit Board by Umberto"
+  }
+}, {
+  "id" : "8e16dcac-f28f-353a-c40e-0f989a406963",
+  "name" : "overlay_color",
+  "label" : "Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000000",
+    "opacity" : 80
+  }
+}, {
+  "id" : "0ddedfb0-f1c4-b4c9-4d6e-56071f73a4c0",
+  "name" : "banner_height",
+  "label" : "Banner Height",
+  "help_text" : "",
+  "inline_help_text" : "in pixels",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 50,
+  "max" : 1000,
+  "step" : 50,
+  "type" : "number",
+  "default" : 500
+}, {
+  "id" : "parallax_speed",
+  "name" : "parallax_speed",
+  "label" : "Parallax Speed",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "slow", "Slow" ], [ "medium", "Medium" ], [ "fast", "Fast" ] ],
+  "type" : "choice",
+  "default" : "medium"
+}, {
+  "id" : "4259a1f2-ded2-7cbd-8a47-57bf3c5e1514",
+  "name" : "alignment",
+  "label" : "Alignment",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "gr-align-left", "Left" ], [ "gr-align-center", "Center" ], [ "gr-align-right", "Right" ] ],
+  "type" : "choice",
+  "default" : "gr-align-center"
+}, {
+  "id" : "29a84da9-42c3-b1e0-5aa6-1b2da92d70c8",
+  "name" : "heading_bool",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "heading.font",
+  "name" : "heading_font",
+  "label" : "Heading Font",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "29a84da9-42c3-b1e0-5aa6-1b2da92d70c8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 44,
+    "font" : "Open Sans",
+    "font_set" : "GOOGLE",
+    "size_unit" : "px",
+    "color" : "#FFFFFF",
+    "styles" : {
+      "font-weight" : 800
+    },
+    "variant" : "800"
+  }
+}, {
+  "id" : "heading.copy",
+  "name" : "heading_text",
+  "label" : "Heading Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "29a84da9-42c3-b1e0-5aa6-1b2da92d70c8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Customizable Parallax Banner"
+}, {
+  "id" : "d2da98db-10c9-e302-c06f-54d6471d4a41",
+  "name" : "subheading_bool",
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "subheading.font",
+  "name" : "subheading_font",
+  "label" : "Subheading Font",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "d2da98db-10c9-e302-c06f-54d6471d4a41",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 16,
+    "font" : "Open Sans",
+    "font_set" : "GOOGLE",
+    "size_unit" : "px",
+    "color" : "#FFFFFF",
+    "styles" : {
+      "font-style" : "italic"
+    }
+  }
+}, {
+  "id" : "subheading.copy",
+  "name" : "subheading_text",
+  "label" : "Subheading Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "d2da98db-10c9-e302-c06f-54d6471d4a41",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The subheading tells us what you're offering, or your company's slogan."
+}, {
+  "id" : "80dfa173-fb0d-5c15-2793-abcf6296bb9e",
+  "name" : "cta_bool",
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "80dfa173-fb0d-5c15-2793-abcf6296bb9e",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta",
+  "default" : null
+}, {
+  "id" : "af90e905-3a26-fc8f-0e16-d158a81f6b9b",
+  "name" : "cta_2_bool",
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "b409ae8a-3ba7-076f-23ef-d9b92dedf9f9",
+  "name" : "cta_2",
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "af90e905-3a26-fc8f-0e16-d158a81f6b9b",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta",
+  "default" : null
+} ]

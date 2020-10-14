@@ -1,0 +1,67 @@
+.gr-parallax-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gr-parallax-banner h1.gr-parallax-banner-heading,
+.gr-parallax-banner p.gr-parallax-banner-subheading,
+.gr-parallax-banner div.gr-parallax-banner-cta-container {
+  margin: 0;
+  width: 100%;
+  max-width: 768px;
+}
+
+.gr-parallax-banner .gr-align-left {
+  text-align: left;
+}
+
+.gr-parallax-banner .gr-align-center {
+  text-align: center;
+}
+
+.gr-parallax-banner .gr-align-right {
+  text-align: right;
+}
+/*
+.gr-parallax-banner div.gr-parallax-banner-cta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+*/
+.gr-parallax-banner div.gr-parallax-banner-cta-container .hs-cta-wrapper a {
+  margin: 10px 0px 0px 0px;
+  display: block;
+}
+
+.gr-parallax-banner div.gr-parallax-banner-cta-container > span:last-child a {
+  margin-left: 10px;
+}
+
+@media (max-width: 425px){
+  .gr-parallax-banner div.gr-parallax-banner-cta-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gr-parallax-banner h1.gr-parallax-banner-heading,
+  .gr-parallax-banner p.gr-parallax-banner-subheading,
+  .gr-parallax-banner div.gr-parallax-banner-cta-container {
+    text-align: center;
+  }
+  
+  .gr-parallax-banner div.gr-parallax-banner-cta-container > span:last-child a {
+    margin-left: 0px;
+  }
+
+}
+
+

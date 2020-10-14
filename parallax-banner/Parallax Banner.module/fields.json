@@ -1,0 +1,161 @@
+[ {
+  "id" : "background_image",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8419600/placeholder/circuit-bg.jpeg",
+    "alt" : "Circuit Board by Umberto"
+  }
+}, {
+  "id" : "8e16dcac-f28f-353a-c40e-0f989a406963",
+  "name" : "overlay_color",
+  "label" : "Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#333333",
+    "opacity" : 80
+  }
+}, {
+  "id" : "0ddedfb0-f1c4-b4c9-4d6e-56071f73a4c0",
+  "name" : "banner_height",
+  "label" : "Banner Height",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 50,
+  "max" : 1000,
+  "step" : 50,
+  "type" : "number",
+  "default" : 500
+}, {
+  "id" : "parallax_speed",
+  "name" : "parallax_speed",
+  "label" : "Parallax Speed",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "slow", "Slow" ], [ "medium", "Medium" ], [ "fast", "Fast" ] ],
+  "type" : "choice",
+  "default" : "slow"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "heading.font",
+    "name" : "font",
+    "label" : "Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "size" : 60,
+      "font" : "Open Sans",
+      "font_set" : "GOOGLE",
+      "size_unit" : "px",
+      "color" : "#FFFFFF",
+      "styles" : {
+        "font-weight" : 800
+      },
+      "variant" : "800"
+    }
+  }, {
+    "id" : "heading.copy",
+    "name" : "copy",
+    "label" : "copy",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem Ipsum"
+  } ],
+  "tab" : "CONTENT",
+  "type" : "group",
+  "default" : {
+    "font" : {
+      "size" : 60,
+      "font" : "Open Sans",
+      "font_set" : "GOOGLE",
+      "size_unit" : "px",
+      "color" : "#FFFFFF",
+      "styles" : {
+        "font-weight" : 800
+      },
+      "variant" : "800"
+    },
+    "copy" : "Lorem Ipsum"
+  }
+}, {
+  "id" : "subheading",
+  "name" : "subheading",
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "subheading.font",
+    "name" : "font",
+    "label" : "Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "size" : 16,
+      "font" : "Open Sans",
+      "font_set" : "GOOGLE",
+      "size_unit" : "px",
+      "color" : "#FFFFFF",
+      "styles" : {
+        "font-style" : "italic"
+      }
+    }
+  }, {
+    "id" : "subheading.copy",
+    "name" : "copy",
+    "label" : "Copy",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+  } ],
+  "tab" : "CONTENT",
+  "type" : "group",
+  "default" : {
+    "font" : {
+      "size" : 16,
+      "font" : "Open Sans",
+      "font_set" : "GOOGLE",
+      "size_unit" : "px",
+      "color" : "#FFFFFF",
+      "styles" : {
+        "font-style" : "italic"
+      }
+    },
+    "copy" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+  }
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : null
+} ]

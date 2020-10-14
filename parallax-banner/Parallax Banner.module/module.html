@@ -1,0 +1,53 @@
+<section id="gr-parallax-banner-{{ name }}" class="gr-parallax-banner">
+  <h1 class="gr-parallax-banner-heading">{{ module.heading.copy }}</h1>
+  <p class="gr-parallax-banner-subheading">{{ module.subheading.copy }}</p>
+  {% if module.cta %}
+      {% cta guid="{{ module.cta }}" %}
+  {% endif %}
+</section>
+{% require_css %}
+<style>
+  {% set opacity = module.overlay_color.opacity / 100 %}
+  {% set overlay = module.overlay_color.color|convert_rgb %}
+  {% set image = module.background_image.src %}
+
+  #gr-parallax-banner-{{name}} {
+    height: {{ module.banner_height}}px;
+    background-image: linear-gradient(rgba({{ overlay }}, {{ opacity }}), rgba({{ overlay }}, {{ opacity }})), url("{{ image }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #gr-parallax-banner-{{name}} h1.gr-parallax-banner-heading {
+    margin: 0;
+    text-align: center;
+    color: {{ module.heading.font.color }};
+    font-size: {{ module.heading.font.size }}{{ module.heading.font.size_unit }};
+    {{ module.heading.font.style }};
+  }
+
+  #gr-parallax-banner-{{name}} p.gr-parallax-banner-subheading {
+    margin: 0;
+    text-align: center;
+    color: {{ module.subheading.font.color }};
+    font-size: {{ module.subheading.font.size }}{{ module.subheading.font.size_unit }};
+    {{ module.subheading.font.style }}
+  }
+
+  #gr-parallax-banner-{{name}} .hs-cta-wrapper a {
+    margin-top: 15px;
+    display: block;
+  }
+
+  #gr-parallax-banner-{{name}} .hs-cta-wrapper a.gr-banner-cta {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+</style>
+{% end_require_css %}
